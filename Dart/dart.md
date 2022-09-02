@@ -235,3 +235,35 @@ class User {
 }
 
 ```
+
+### s4
+
+```dart
+void main(){
+  var promoActive = true;
+  
+  var nav = ['Home', 'Furniture', 'Plants', if (promoActive) 'Outlet'];
+  print(nav);
+  
+  
+  var listOfInts = [1, 2, 3];
+  var listOfStrings = ['#0', for (var i in listOfInts) '#$i'];
+  print(listOfStrings);
+  }
+  
+ ******************************************************
+   void doStuff(
+    {List<int> list = const [1, 2, 3],
+    Map<String, String> gifts = const {
+      'first': 'paper',
+      'second': 'cotton',
+      'third': 'leather'
+    }}) {
+  print('list:  $list');
+  print('gifts: $gifts');
+}
+  doStuff();
+}
+  
+  
+```
