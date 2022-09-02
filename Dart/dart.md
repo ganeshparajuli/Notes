@@ -157,6 +157,13 @@ void main(List<String> arguments) {
   print(namesFilter[0]);
 }
 
+void main() {
+final numbers = <int>[1, 2, 3];
+final map = Map<String, int>.fromIterable(numbers,
+    key: (item) => item.toString(),
+    value: (item) => item * item);
+print(map); // {1: 1, 2: 4, 3: 9}
+}
 void main(List<String> arguments) {
   final names = ['John', 'Jane', 'Matthew'];
   final namesFilter = names.map((name) => name).toList();
